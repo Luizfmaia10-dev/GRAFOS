@@ -35,4 +35,11 @@ A busca em profundidade ou DFS e um tipo de busca em que nos temos tres tipos di
 
  Quando nos começamos a DFS fazemos pilha com os vertice que o conectam,por exemplo a pilha do vertice V BP(V)={A,B,C},estou dizendo que o vertice V se conecta com os vertices ABC,a escolha da ordem é arbritaria ,seguindo a ordem o proximo elemento a ser explorado seria o A então ficaria BP(A)={conjunto de vertices que conectam com o A} e do V para o A teria uma aresta de arvore,alem disso por começamos a busca pelo V nos teriamos no V um tempo de descoberta =1 e o seu pai nulo ja que ele e o primeiro ,deposi que a egnte foi para o A teriamos no vertice A um Tempo de descoberta = 2 e o o seu pai será o Ve por ai seguimos com o conjunto do vertice A
 
- 
+ ## ALGORITMOS
+ - Bellman Ford
+ Usado para arestas com peso negativos que o algoritmo de Dijjsktra não é tão eficiiente 
+Vi um video no youtube para auxiliar nessa parte:
+https://www.youtube.com/watch?v=bJMGARLV2ZM
+Nesse algoritmos,nos anotamos todos os vertices do grafos,depois anotamos todos os vertices que alcança os vertices em estudo,como se fossee uma ulista
+A partir disso fazemos a tabela de interações(n-1)por vertices(rotulo do vertice) e vamos colocando na tabela nessa ordem 
+(custo de alcançe,aresta que alcança),na primeira interação nos so completamos com os vertices que a origem alcança,e depois das ourtas interaçãoes o que o vertice que foram explorados alcança,nisso nos comparamos os valores minimos de acordo com as anotações dos vertices que alcança o vertice em estudo,acerdito com o entendimento do video fica melhor para entender essa explicação,enfim,ele pega o caminho da lista que vertices alcancantes e compara,mas voce so pode atualizar o valor de um vertice depois que o outro que voce for atualizar ja tiver explorado
